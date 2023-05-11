@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <div class="row vh-100 text-center align-center ">
         <div class="col">
-            <form  action="config/Process.php" method="POST">
+            <form  action="./config/objectUsuario.php" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="text" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">

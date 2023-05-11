@@ -22,8 +22,8 @@ if(isset($_POST['login'])){
    }
 }
 if(isset($_POST['logout'])){
-    unset($usuario)
-    header("Location: ../index.php")
+    unset($usuario);
+    header("Location: ../index.php");
 }
 
 ?>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Bienvenido</h1>
-    <form action="./Process.php" method="POST">
+    <form action="./config/objectUsuario.php" method="POST">
         <button type="submit" name="logout" class="btn btn-primary">Submit</button>
     </form>   
 </body>
