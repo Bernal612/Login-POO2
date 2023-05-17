@@ -19,7 +19,7 @@ Class DatabasePDO {
 
         try{
 
-            $base_de_datos = new PDO('mysql:host=localhost;dbname=localhost ' . $this->user, $this->pass);
+            $base_de_datos = new PDO('mysql:host=localhost;dbname=login', $this->user, $this->pass);
             if ($base_de_datos) {
                 return $base_de_datos;
             }

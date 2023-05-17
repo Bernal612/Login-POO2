@@ -1,6 +1,16 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
 form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    padding: 17px;
+    width: 300px;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%,-50%);
 }

@@ -9,7 +9,7 @@ if(isset($_POST['login'])){
     $usuario = new Usuario($user,$pass);
     $usuario->login();
 
-    $response = $users->login($user,$pass);
+    $response = $usuario->login();
 
    echo $response; 
 
@@ -19,7 +19,7 @@ if(isset($_POST['login'])){
 
    else{
       echo '<script language="javascript">alert("Error En Datos");</script>';
-   }
+      }
 }
 if(isset($_POST['logout'])){
     unset($usuario);

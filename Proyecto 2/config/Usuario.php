@@ -1,7 +1,10 @@
 <?php
 include_once('db.php');
 
-class Usuario{
+class Usuario extends DatabasePDO{
+
+    private $user = null;
+    private $pass = null;
     public function __construct($user,$pass){
         $this->user = $user;
         $this->pass = $pass;
@@ -13,7 +16,7 @@ public function login(){
         $cnn = $this->conn();
     
             //Preparamos la consulta sql
-            $stmt = $cnn->prepare("SELECT * FROM login WHERE usuario=:usernameEmail  AND contrasenia=:hash_password"); 
+            $stmt = $cnn->prepare("SELECT * FROM usuarios WHERE usuario=:usernameEmail  AND contrasenia=:hash_password"); 
             $stmt->bindParam("usernameEmail", $this->user,PDO::PARAM_STR);
             $stmt->bindParam("hash_password", $this->pass,PDO::PARAM_STR);
             //Ejecutamos la consulta

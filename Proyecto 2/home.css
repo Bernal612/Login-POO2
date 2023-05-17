@@ -1,0 +1,26 @@
+body{
+    background-color: bisque;
+}
+div .col-2{
+    background-color: darksalmon;
+}
+div .col-10{
+    background-color:bisque;
+    height: max-content;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+div .card{
+    border-color: black;
+}
+div .dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logout {
+    display: flex;
+    flex-direction: row-reverse;
+}
